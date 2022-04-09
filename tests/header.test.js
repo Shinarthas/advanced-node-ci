@@ -23,7 +23,7 @@ test('Auth is ok', async ()=>{
     await customPage.click('ul.right a');
 
     const googleAuthPageText=await customPage.url();
-    expect(googleAuthPageText).toContain('https://accounts.google.com/o/oauth2/')
+    expect(googleAuthPageText).toContain('https://accounts.google.com/')
 })
 
 test('When sign in shows logout buttion', async ()=>{
